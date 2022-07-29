@@ -1,0 +1,33 @@
+GET http://localhost:3000/songs.json
+
+
+###
+GET http://localhost:3000/songs/1.json
+
+
+###
+PATCH http://localhost:3000/songs/2.json
+Content-Type: application/json
+
+{
+  "title": "test_title",
+  "album": "test_album",
+  "artist": "test_artist",
+  "year": 2022
+}
+
+
+###
+POST http://localhost:3000/songs.json
+Content-Type: application/json
+
+{
+  "title": "tile goes here",
+  "album": "album goes here",
+  "artist": "artist goes here",
+  "year": 1999
+}
+
+
+###
+DELETE http://localhost:3000/songs/3.json
